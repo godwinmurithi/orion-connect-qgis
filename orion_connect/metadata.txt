@@ -1,0 +1,32 @@
+[general]
+name=Orion Connect
+qgisMinimumVersion=3.22
+supportsQt6=True
+description=Browse OrionGIS datasets and add them to QGIS as live WMS/WFS layers, and upload layers to your OrionGIS workspace.
+about=Orion Connect links QGIS Desktop to OrionGIS (https://orionterrametrics.com), the AI-native cloud GIS. Search the datasets hosted on OrionGIS, add any of them to your project as a live WMS (raster) or WFS (vector) layer in one click, upload a layer from your project into your OrionGIS workspace, and open your OrionInsights dashboards in the browser. Browsing and adding public layers needs no account; uploading needs a free OrionGIS account. The plugin talks only to the OrionGIS server you choose, over HTTPS, using standard OGC services and the OrionGIS REST API. It has no external Python dependencies.
+version=0.2.0
+author=Orion Terrametrics Africa Limited
+email=info@orionterrametrics.com
+
+changelog=0.2.0 (2026-10-31)
+    - Ready for QGIS 4 (Qt6): fully scoped Qt enums and exec()
+    - Toolbar is created in initGui() and fully removed on unload, so reloading the plugin leaves no empty toolbar
+    - New Help menu entry linking to the online guide
+    - OrionInsights link updated to orionterrametrics.com/insights
+    - Fixed: search now filters by title and description (it returned every dataset before)
+    - New icon, GPL-2.0-or-later licence file included in the package
+    0.1.0 (2026-09-13)
+    - First release: sign in, browse and search, add as WMS/WFS, upload a layer, open OrionInsights
+
+homepage=https://orionterrametrics.com/product/orion-connect
+tracker=https://github.com/godwinmurithi/orion-connect-qgis/issues
+repository=https://github.com/godwinmurithi/orion-connect-qgis
+
+category=Web
+tags=catalogue,cloud,geonode,ogc,wms,wfs,upload,web,orion,oriongis
+
+icon=icon.png
+experimental=True
+deprecated=False
+server=False
+hasProcessingProvider=no
